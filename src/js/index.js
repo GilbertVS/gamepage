@@ -1,6 +1,6 @@
 var control = 1;
 var pass;
-
+document.querySelector('#admin').onchange = initGame();
 function surt() {
     contanidor = "<img src='' alt=''>";
     document.getElementById("gameNew").innerHTML=contanidor;
@@ -16,7 +16,12 @@ function endavant(){
     else control = 1;
     playgame(control);
 }
-
+function initGame() {
+    var adm = document.getElementById("admin").value;
+    var encre = adm ^ 986727;
+    if (encre == 293784) document.getElementById("gamemobile").hidden = false;
+    else document.getElementById("gamemobile").hidden = true;
+}
 function playgame(game) {
     var ad = document.getElementById("admin").value;
     var encr = ad ^ 986727;
