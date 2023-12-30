@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootStrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+            crossorigin="anonymous">
+    <!-- CSS Costum -->
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="./src/css/index.css" rel="stylesheet" type="text/css"/>
+    <!-- Icon link-->
+    <link href="./src/img/ico.ico" rel="icon">
+    <!-- Java Script documnet -->
+    <script src = "./src/js/index.js" type="text/javascript"> </script>
+    <title>Display Game</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Interactive Display Game </a>
+                <input type = "password"  id="admin" />
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" id="dis"><img src="src\img\inici.png" height="30" alt=""/></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="cal.html" id="dis"><img src="src\img\cal.png" height="30" alt=""/></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="form.html" id="dis"><img src="src\img\form.png" height="30" alt=""/></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://www.google.com" id="dis"><img src="src\img\sortir.png" height="30" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    <header>
+        <div class ="container">
+            <div class = "row">
+                <div class = "col-md-12">
+                    <h1>SET GAME TO PLAY</h1>
+                    <p> There're a set of interective game for users and with enemy, to win them, for each windows we have one display game on the bigger display. There are buttons for change of game any moment, and too exit all game with red botton.</p>
+                    
+
+                </div>
+            </div>
+
+        </div>       
+    </header>
+    <section>
+        <div class="row" id = "gameNew" hidden=""></div>
+    </section>
+    <section>
+            <div class = "row">
+                <div class = "col-md-1">
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/pacman.png"  alt="Pac-man" onclick = "playgame(1)"/></div>
+                    <h3>Pac-Man</h3>
+                </div>             
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/arkanoid.png" alt="Arkanoid" onclick = "playgame(2)" /></div>
+                    <h3>Arkanoid</h3>
+                </div>         
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/dinosaurs.png" alt="Dinosaurs" onclick = "playgame(3)"/></div>
+                    <h3>Dinosaurs</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/lemming.png" alt="lemming" onclick = "playgame(4)"></div>
+                    <h3>Lemming</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id= "img1" src="./src/img/mazinger.png" alt= "Mazinger Z" onclick = "playgame(5)"></div>
+                    <h3>Mazinger Z</h3>
+                </div>               
+            </div>
+            <div class="row">
+                <div class = "col-md-1"></div>
+                <div class = "col-md-2" >
+                    <div id = "img"><img id="img1" src="./src/img/doozy.png" alt="Doozy" onclick = "playgame(6)"></div>
+                    <h3>Doozy</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/tettris.png" alt="ttetris" onclick = "playgame(7)"></div>
+                    <h3>Tettris</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/reflection.png" alt="Reflection" onclick = "playgame(8)"></div>
+                    <h3>Reflection</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/laberint.png" alt="laberint" onclick = "playgame(9)"/></div>
+                    <h3>Labyrinth</h3>                                      
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/laberint2.png" alt="laberint2" onclick = "playgame(10)"></div>
+                    <h3>Labyrinth Two</h3>
+                </div>                
+            </div>   
+            <div class = "row">
+                <div class = "col-md-1"></div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1"  src="./src/img/obstacle.png" alt="Obstacle 3D" onclick = "playgame(11)"/></div>
+                    <h3>Obstacle race ship</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/pregunta.png" alt="Questions 15x3" onclick = "playgame(12)"/></div>
+                    <h3>Questions 15x3</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/pong.png" alt="Pong" onclick = "playgame(13)"/></div>
+                    <h3>Pong</h3>
+                </div> 
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/shooter.png" alt="Shooter" onclick = "playgame(14)"/></div>
+                    <h3>Shooter</h3>
+                </div> 
+                <div class = "col-md-2">
+                    <div id="img"><img id="img1" src="./src/img/racecars.png" alt="Racecars" onclick = "playgame(15)"/></div>
+                    <h3>Race cars</h3>
+                </div>
+            </div>                   
+            <div class = "row">
+                <div class = "col-md-1"></div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/million.png" alt="Million" onclick = "playgame(16)"/></div>
+                    <h3>Million</h3>
+                </div> 
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/cit.png" alt="City" onclick = "playgame(17)"/></div>
+                    <h3>City</h3>
+                </div> 
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/circuit.png" alt="Circuit Ball" onclick = "playgame(18)"/></div>
+                    <h3>Circuit Ball</h3>
+                </div>  
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/soldier.png" alt="Soldier" onclick = "playgame(19)"/></div>
+                    <h3>Soldier</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/survival.png" alt="Survival" onclick = "playgame(20)"/></div>
+                    <h3>Survival</h3>
+                </div>          
+            </div>
+            <div class = "row">
+                <div class = "col-md-1"></div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/city2.png" alt="city 2" onclick = "playgame(21)"/></div>
+                    <h3>City II</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/rally.png" alt="Objective Piece" onclick = "playgame(22)"/></div>
+                    <h3>Rally Cars</h3>
+                </div>                
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/tower.png" alt="Tower" onclick = "playgame(23)"/></div>
+                    <h3>Tower</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/castle.png" alt="Fantasy Castle" onclick = "playgame(24)"/></div>
+                    <h3>Fantasy Castle</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/jumpking.png" alt="Jump Knight" onclick = "playgame(25)"/></div>
+                    <h3>Jump Knight</h3>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-1"></div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/board.png" alt="Board Movile" onclick = "playgame(26)"/></div>
+                    <h3>Board Movile</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/pacman2.png" alt="PacMan 3D" onclick = "playgame(27)"/></div>
+                    <h3>PacMan 3D</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/pacman3.png" alt="PacMan Night" onclick = "playgame(28)"/></div>
+                    <h3>PacMan Night</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src = "./src/img/domino.png" alt = "Domino" onclick = "playgame(29)"/></div>
+                    <h3>Domino</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src = "./src/img/pingpong.png" alt = "Ping Pong" onclick = "playgame(30)"/></div>
+                    <h3>Ping Pong</h3>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-1"></div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/threeball.png" alt="Three Ball" onclick = "playgame(31)"/></div>
+                    <h3>Three Ball</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src="./src/img/asteroid.png" alt="Asteroid" onclick = "playgame(32)"/></div>
+                    <h3>Asteroid</h3>
+                </div>
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src = "./src/img/dammes.png" alt = "Dammes" onclick = "playgame(33)"/></div>
+                    <h3>Dammes</h3>
+                </div> 
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src = "./src/img/formula1.png" alt = "Formula 1" onclick = "playgame(34)"/></div>
+                    <h3>Formula 1</h3>
+                </div> 
+                <div class = "col-md-2">
+                    <div id = "img"><img id="img1" src = "./src/img/alfawarriors.png" alt = "Alfa Warriors" onclick = "playgame(35)"/></div>
+                    <h3>Alfa Warriors</h3>
+                </div>           
+            </div>
+    </section>
+    <header>
+        <div class = "container">
+            <div class = "row">
+                <div clas = "col-md-12">
+                    <h1>DOWNLOAD DOCUMENTS</h1>
+                    <p> You can download some document about games make for developer, too some game for desk application. This sofware make with developer lenguage C#, and grafic editor Unity versions 2019.4.5f1, 2020.3.2f1, and Visual Studio Comunity 2019 for C# lenguage.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="row">
+            <div class= "col-md-1"></div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/pdf/instalarvtiger.pdf"><img id="img1" src="./src/img/pdf.png" alt="instalacio Vtiger"></a></div>
+                <h3>Vtiger instalation</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/pdf/importarcsvavtiger.pdf"><img id="img1" src="./src/img/pdf.png" alt="Import Vtiger CSV"></a></div>
+                <h3>Import Vtiger-CSV</h3>
+            </div>
+            <div class = "col-md-2">
+                <div id="img"><a href="./src/pdf/potencialaclient.pdf"><img id="img1" src="./src/img/pdf.png" alt="potencial a Client"></a></div>
+                <h3>Potencial to Client</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/pdf/instalarodoo14.pdf"><img id="img1" src="./src/img/pdf.png" alt="instalar Odoo14"></a></div>
+                <h3>Odoo14 instalation</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/pdf/instalarunity.pdf"><img id="img1" src="./src/img/pdf.png" alt="instalacio Unity"></a></div>
+                <h3>Unity instalation</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col-md-1"></div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/pdf/instruccions.pdf"><img id="img1" src="./src/img/pdf.png" alt="instruccions videojocs"></a></div>
+                <h3>Instruction games</h3>
+            </div>
+            <div class = "col-md-2">
+                <div id="img"><a href="./src/pdf/videojoc1.pdf"><img id="img1" src="./src/img/pdf.png" alt="informe Preguntes15x3"></a></div>
+                <h3>Question 15x3</h3>
+            </div>
+            <div class = "col-md-2">
+                <div id="img"><a href="./src/pdf/videojoc2.pdf"><img id="img1" src="./src/img/pdf.png" alt="informe Shooter"></a></div>
+                <h3>Pong</h3>
+            </div>
+            <div class = "col-md-2">
+                <div id="img"><a href="./src/pdf/videojoc3.pdf"><img id="img1" src="./src/img/pdf.png" alt="informe Pong"></a></div>
+                <h3>Shooter</h3>
+            </div>                      
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/pdf/manualsqlite.pdf"><img id="img1" src="./src/img/pdf.png" alt="Sqlite3 manual"></a></div>
+                <h3>SQLite3 to Unity</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class= "col-md-1"></div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/pdf/practica1.pdf"><img id="img1" src="./src/img/pdf.png" alt="informe Million"></a></div>
+                <h3>Million</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/pdf/practica2.pdf"><img id="img1" src="./src/img/pdf.png" alt="informe City"></a></div>
+                <h3>City</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/pdf/practica3.pdf"><img id="img1" src="./src/img/pdf.png" alt="informe Circuit"></a></div>
+                <h3>Circuit Ball</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/pdf/practica4.pdf"><img id="img1" src="./src/img/pdf.png" alt="informe Soldier"></a></div>
+                <h3>Soldier</h3>
+            </div>
+            <div class = "col-md-2">
+                <div id="img"><a href="./src/pdf/projectend.pdf"><img id="img1" src="./src/img/pdf.png" alt="informe Survival"></a></div>
+                <h3>Survival</h3>
+            </div>
+        </div>
+    </section>
+    <header>
+        <div class = "container">
+            <div class = "row">
+                <div clas = "col-md-12">
+                    <h1>DOWNLOAD GAMES</h1>
+                    <p>You can born folder with game name, and the unzipped file on folter, then you can play in your computer when execute the file "nameGame.exe". A lot of games build 64Bits and SQLite3 of data base.</p>                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="row">
+            <div class= "col-md-3"></div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/game/pregunta15x3.zip"><img id="img1" src="./src/img/ico.png" alt="game Pregunta"></a></div>
+                <h3>Preguntes 15x3</h3>               
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/game/pong.zip"><img id="img1" src="./src/img/ico.png" alt="game Pong"></a></div>
+                <h3>Pong</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="https://drive.google.com/file/d/1MN6bFGEa9Dpaq0cRK_ZMS5tL-Ix-v0Bp/view?usp=sharing"><img id="img1" src="./src/img/ico.png" alt="game Shooter"></a></div>
+                <h3>Shooter</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class= "col-md-2"></div>
+            <div class= "col-md-2">
+                <div id="img"><a href="https://drive.google.com/file/d/1QXgw2XEWlp0oTuFtAoTvTMj2CLql66hN/view?usp=sharing"><img id="img1" src="./src/img/ico.png" alt="game Million"></a></div>
+                <h3>Million</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="https://drive.google.com/file/d/14czq-AbaSg1dvGn5gp5vt1r6QwzFukGe/view?usp=sharing"><img id="img1" src="./src/img/ico.png" alt="game City"></a></div>
+                <h3>City</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="https://drive.google.com/file/d/1xi1L2Og7N_q3GvBcU0AwIY9_HIPN66No/view?usp=sharing"><img id="img1" src="./src/img/ico.png" alt="game Circuit"></a></div>
+                <h3>Circuit Ball</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="https://drive.google.com/file/d/14iKt2gVqZFnuqXXy46rxmeFx9UyZyilj/view?usp=sharing"><img id="img1" src="./src/img/ico.png" alt="game Soldier"></a></div>
+                <h3>Soldier</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class= "col-md-2"></div>
+            <div class= "col-md-2">
+                <div id="img"><a href="https://drive.google.com/file/d/1Q4_0nmjBSD1_bko6gOTJyw_FyKgWsRdj/view?usp=sharing"><img id="img1" src="./src/img/ico.png" alt="game obstcle race ship"></a></div>
+                <h3>Obstacle race ship</h3>               
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="https://drive.google.com/file/d/1YqDLWbBNtR2yKKfCSMfn5xKGUPAHgmWO/view?usp=sharing"><img id="img1" src="./src/img/ico.png" alt="game dinosaurs"></a></div>
+                <h3>Dinosaurs</h3>               
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="https://drive.google.com/file/d/1ZFEQ1fM0H5f4HdmuJXavOOP4SQARES2Q/view?usp=sharing"><img id="img1" src="./src/img/ico.png" alt="game Pong"></a></div>
+                <h3>Laberinth</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="https://drive.google.com/file/d/1RSsY-CAA66iVLIOVpfws1tjpppP8I5aY/view?usp=sharing"><img id="img1" src="./src/img/ico.png" alt="game Shooter"></a></div>
+                <h3>Soldier high level</h3>
+            </div>
+        </div>
+            
+    </section>
+    <header>
+        <div class = "container">
+            <div class = "row">
+                <div clas = "col-md-12">
+                    <h1>DOWNLOAD GAMES OF MOVILE</h1>
+                    <p>You can download game file "apk" extension on your Android movile phone, only after you've installed on its device. Only you can play with them in his corrent game application.</p>                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="row" id="gameNew" hidden="">
+            <div class= "col-md-2"></div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/game/twogames.apk"><img id="img1" src="./src/img/twogames.png" alt="micro games"></a></div>
+                <h3>Two Games</h3>               
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/game/jumperKing.apk"><img id="img1" src="./src/img/jumpkimg.png" alt="jumper kniht"></a></div>
+                <h3>Jumper Knight</h3>               
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/game/Microgames.apk"><img id="img1" src="./src/img/microgame.png" alt="micro games"></a></div>
+                <h3>Micro Game</h3>               
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><a href="./src/game/marsattack.apk"><img id="img1" src="./src/img/marsattack.jpg" alt="mars attack"></a></div>
+                <h3>Mars Attack</h3>               
+            </div>
+        </div>
+        <div style="text-align: left">
+            <a id="com" href="#">
+                <img src="src/img/inici.png" alt=""/>
+            </a>
+        </div><br/><br/>
+    </section>
+    <header>
+        <div class = "container">
+            <div class = "row">
+                <div clas = "col-md-12" text-center>
+                    <br>This website don't have any commerc activety and any empresarial negocity, only work for free software open source. </br> Please always we're working respect the environment, don't know to do another thing. </p>                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="container">
+            <div id="flotar">
+                <p id="links"><i><b>Relation links: </b></i></p>
+                <a id="linking" href="https://gilbert46.github.io/DWG/">Drawing ACAD</a>
+                <a id="linking" href="https://gsxgrxhnupzmx1izaze8yw-on.drv.tw/www.fonamentsI.com/
+                ">Grafic Disseny</a>
+                <a id="linking" href="https://gsxgrxhnupzmx1izaze8yw-on.drv.tw/www.guerraSuccecioI.com/">Succetion War<a>
+                <a id="linking" href="https://gilbert46.github.io/Ex2_Ecommerc/">E_comerc prototive</a>
+                <a id="linking" href="https://gilbert46.github.io/maps_inter9/">Interactive Maps</a>
+                <p><small><i>Copyright: Free licence, author right</i></small></p> 
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>   
+</body>
+</html>

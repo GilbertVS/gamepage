@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootStrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+            crossorigin="anonymous">
+    <!-- CSS Costum -->
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="./src/css/cal.css" rel="stylesheet" type="text/css"/>
+    <!-- Icon link-->
+    <link href="./src/img/ico.ico" rel="icon">
+    <!-- Java Script documnet -->
+    <script src = "./src/js/cal.js" type="text/javascript"> </script>
+    <title>Display Game</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Interactive Display Game </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" id="dis"><img src="src\img\inici.png" height="30" alt=""/></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="cal.html" id="dis"><img src="src\img\cal.png" height="30" alt=""/></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="form.html" id="dis"><img src="src\img\form.png" height="30" alt=""/></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="http:\\www.google.com" id="dis"><img src="src\img\sortir.png" height="30" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    <header>
+        <div class = "container">
+            <br class = "row">
+                <br clas = "col-md-12">
+                    <h1>SALES GAMES</h1>
+                    <p>Selection the game that you want buy. You put the new game on the target sale.<br> Count every unity and summation selft them, you can delete the purchase at any time with the 'R button</p> 
+                </div>
+            </div>
+        </div>  
+    </header>
+    <section>
+        <div class="row">
+            <div class= "col-md-2"></div>
+            <div class= "col-md-2">
+                <div id="img"><img id="img1" src="./src/img/million.png" alt="informe Million" onclick="buyGame(1)"></div>
+                <h3>Million</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><img id="img1" src="./src/img/cit.png" alt="informe Million" onclick="buyGame(2)"></div>
+                <h3>City</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><img id="img1" src="./src/img/circuit.png" alt="informe Million" onclick="buyGame(3)"></div>
+                <h3>Circuit Ball</h3>
+            </div>
+            <div class= "col-md-2">
+                <div id="img"><img id="img1" src="./src/img/soldier.png" alt="informe Million" onclick="buyGame(4)"></div>
+                <h3>Soldier</h3>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class ="container">
+            <div class = "row">
+                <div class = "col-md-2"></div>
+                <div class = "col-md-8">
+                    <div id="buyG" hidden=""></div>
+                </div>
+           </div>
+        </div>
+    </section>
+    <header>
+        <div class = "container">
+            <div class = "row">
+                <div clas = "col-md-12">
+                    <h1>CALCULATOR</h1>
+                    <p>Desktop calculator for simple operations and square roots. Made with javascript language, and complex operations with the Math object.</p>   
+                </div>
+            </div>
+        </div>     
+    </header>
+    <section>
+        <div class="container">
+            <div class = "row">
+                <div class = "col-md-2"></div>
+                <div class = "col-md-8">
+                    <div id="fila">
+                        <input type="button" id="casile" value="0" onclick ="intoNumber(0)"></input>
+                        <input type="button" id="casile" value="p" onclick ="potencia()"></input>
+                        <input type="button" id="casile" value="sq" onclick = "sqrt()"></input>
+                        <input type="button" id="casile" value="/" onclick="divid()"></input>
+                        <input type="button" id="casile" value="%" onclick="porcent()"></input>
+                    </div>
+                    <div id="fila">
+                        <input type="button" id="casile" value="1" onclick ="intoNumber(1)"></input>
+                        <input type="button" id="casile" value="2" onclick ="intoNumber(2)"></input>
+                        <input type="button" id="casile" value="3" onclick ="intoNumber(3)"></input>
+                        <input type="button" id="casile" value="x" onclick="mult()"></input>
+                        <input type="button" id="casile" value="M" onclick ="memory()"></input>
+                    </div>
+                    <div id="fila">
+                        <input type="button" id="casile" value="4" onclick ="intoNumber(4)"></input>
+                        <input type="button" id="casile" value="5" onclick ="intoNumber(5)"></input>
+                        <input type="button" id="casile" value="6" onclick ="intoNumber(6)"></input>
+                        <input type="button" id="casile" value="+" onclick ="sum()"></input>
+                        <input type="button" id="casile" value="M-" onclick ="memo()"></input>
+                    </div>
+                    <div id="fila">
+                        <input type="button" id="casile" value="7" onclick ="intoNumber(7)"></input>
+                        <input type="button" id="casile" value="8" onclick ="intoNumber(8)"></input>
+                        <input type="button" id="casile" value="9" onclick ="intoNumber(9)"></input>
+                        <input type="button" id="casile" value="-" onclick="rest()"></input>
+                        <input type="button" id="casile" value="." onclick ="intoNumber('.')"></input>
+                    </div>
+                    <div id="fila">
+                        <div id="pantalla">
+                            <div id="number">0</div>
+                        </div>
+                        <input type="button" id="casile" value="=" onclick="resul()"></input>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+            <div style="text-align: left">
+                <a id="com" href="#">
+                    <img src="src/img/inici.png" alt=""/>
+                </a>
+            </div><br/><br/>
+    </section>
+    <header>
+        <div class = "container">
+            <div class = "row">
+                <div clas = "col-md-12">
+                    <br>This website don't have any commerc activety and any empresarial negocity, only work for free software open source. </br> Please always we're working respect the environment, don't know to do another thing. </p>                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="container">
+            <div id="flotar">
+                <p id="links"><i><b>Relation links: </b></i></p>
+                <a id="linking" href="https://gilbert46.github.io/DWG/">Drawing ACAD</a>
+                <a id="linking" href="https://gsxgrxhnupzmx1izaze8yw-on.drv.tw/www.fonamentsI.com/
+                ">Grafic Disseny</a>
+                <a id="linking" href="https://gsxgrxhnupzmx1izaze8yw-on.drv.tw/www.guerraSuccecioI.com/">Succetion War<a>
+                <a id="linking" href="https://gilbert46.github.io/Ex2_Ecommerc/">E_comerc prototive</a>
+                <a id="linking" href="https://gilbert46.github.io/maps_inter9/">Interactive Maps</a>
+                <p><small><i>Copyright: Free licence, author right</i></small></p> 
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>   
+</body>
+</html>

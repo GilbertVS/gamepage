@@ -1,0 +1,105 @@
+*{
+    padding:0.1%;
+}
+body{
+    padding: 1%;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    text-align: center;
+}
+header{
+    background: gray;
+    color: whitesmoke;
+    font-size: 150%;
+}
+#dis{
+    margin-right: 2%;
+}
+#dis:hover{
+    background: #ffffff;
+}
+section{
+    background: #ffaaaa;
+    padding: 1%;
+    text-align: center;
+}
+
+#img{
+    border: 5px solid  whitesmoke;
+    background: whitesmoke;
+    box-shadow: 5px 5px 15px rgba(1,1,1,0.75);
+}
+#img:hover{
+    border: 5px solid #771111;
+    background: #771111;
+}
+#img1 {
+    width: 94%;
+}
+
+#calcul{
+    display: blocK;
+    margin: 1px auto;
+}
+#pantalla{
+    font-size:500%;
+    width: 80%;
+    background: #222222;
+    color: white;
+}
+#number{
+    margin-right: 5%;
+    text-align: right;
+}
+#fila{
+    display: flex;
+}
+#casile{
+    font-size: 450%;
+    width: 20%;
+    color: #666666;
+    background: whitesmoke;
+}
+#casile:hover{
+    color: yellow;
+    background: #666666;
+}
+
+footer{
+    padding: 0.1%;
+    height: 8%;
+    background: #aaaaaa;
+    font-size: 150%;
+}
+#flotar{
+    text-align: right;
+}
+#linking{
+    float: left;
+    color: black;
+    margin-right: 2%;
+}
+#links{
+    text-align: center;
+    text-decoration: underline;
+}
+#buyG{
+    background: whitesmoke;
+    color:#666666;
+    font-size: 150%;
+}
+#sor, #con1, #con2 {
+    display:inline-block;
+    margin-left : 0.5%;
+    border: 5px solid whitesmoke;
+}
+#sor:hover, #con1:hover, #con2:hover {
+    background: grey;
+    border: 5px solid grey;
+}
+#sale{
+    font-size: 250%;
+    color:#117711;
+}
+

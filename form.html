@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootStrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+            crossorigin="anonymous">
+    <!-- CSS Costum -->
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="./src/css/index.css" rel="stylesheet" type="text/css"/>
+    <!-- Icon link-->
+    <link href="./src/img/ico.ico" rel="icon">
+    <!-- Java Script documnet -->
+    <script src = "./src/js/form.js" type="text/javascript"> </script>
+    <title>Display Game</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Interactive Display Game </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" id="dis"><img src="src\img\inici.png" height="30" alt=""/></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="cal.html" id="dis"><img src="src\img\cal.png" height="30" alt=""/></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="form.html" id="dis"><img src="src\img\form.png" height="30" alt=""/></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="http:\\www.google.com" id="dis"><img src="src\img\sortir.png" height="30" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+
+    <header>
+        <div class = "container">
+            <div class = "row">
+                <div clas = "col-md-12">
+                    <h1>REGISTRED FORM</h1>
+                    <p>Registration form on the website for our users. Made with character validation for the form fields in javascript language.</p>
+                </div>
+            </div>
+        </div> 
+    </header>
+    <section>
+        <div class = container>
+            <div class="row">
+            <div class= "col-md-2"></div>
+            <div class = "col-md-8" id="regitre">
+                <h1> REGISTRED LogIN</h1>
+                <form method="POST">
+                    <div id="errorname"></div>
+                    <p id="etiq" >First Name:<input type="text" id="name" placeholder="*"/></p>
+                    <div id="errorsurn"></div>
+                    <p id="etiq"> Surnames: <input type="text" id="surname" placeholder="*"></p>
+                    <div id="erroremail"></div>
+                    <p id="etiq">Elect mail:<input type="text" id="email" placeholder="*"/></p>
+                    <p id="etiq"> Adress : <input type="text" id="adress"/></p>
+                    <div id="errorCP"></div>
+                    <p id="etiq">Postal Code:<input type="number" id="pc" placeholder="*"/></p>
+                    <br id="etiq2">Commentary:</br><textarea id="commentary"></textarea></p>
+                    <input type="button" id="validar" value="Validate" onclick="validateForm()">
+                    <div id="sendMsg"></div>
+                    <input type="button" id="send" value=" SEND !!!" hidden="" style="background: green;" hidden="" onclick="sendForm()"/>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+    <header>
+        <div class = "container">
+            <div class = "row">
+                <div clas = "col-md-12">
+                    <h1>MAP OF CITY</h1>
+                    <p>Orientation map in the city and around the world. Interactive map of locations connected with satellite in real time.</p> 
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <section>
+        <div class="row">
+            <div class= "col-md-2"></div>
+            <div class= "col-md-8">
+                <div id ="maps">
+                    <iframe  id="capt" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14173.96144885041!2d2.1629522!3d41.3775599!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sca!2ses!4v1458059080580" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        </div>
+            <div style="text-align: left">
+                <a id="com" href="#">
+                    <img src="src/img/inici.png" alt=""/>
+                </a>
+            </div><br/><br/>
+    </section>
+    <header>
+        <div class = "container">
+            <div class = "row">
+                <div clas = "col-md-12">
+                    <br>This website don't have any commerc activety and any empresarial negocity, only work for free software open source. </br> Please always we're working respect the environment, don't know to do another thing. </p>                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="container">
+            <div id="flotar">
+                <p id="links"><i><b>Relation links: </b></i></p>
+                <a id="linking" href="https://gilbert46.github.io/DWG/">Drawing ACAD</a>
+                <a id="linking" href="https://gsxgrxhnupzmx1izaze8yw-on.drv.tw/www.fonamentsI.com/
+                ">Grafic Disseny</a>
+                <a id="linking" href="https://gsxgrxhnupzmx1izaze8yw-on.drv.tw/www.guerraSuccecioI.com/">Succetion War<a>
+                <a id="linking" href="https://gilbert46.github.io/Ex2_Ecommerc/">E_comerc prototive</a>
+                <a id="linking" href="https://gilbert46.github.io/maps_inter9/">Interactive Maps</a>
+                <p><small><i>Copyright: Free licence, author right</i></small></p> 
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>   
+</body>
+</html>

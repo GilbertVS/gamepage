@@ -1,0 +1,98 @@
+*{
+    padding: 0.5%;
+}
+body{
+    padding: 1%;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    text-align: center;
+}
+header{
+    background: gray;
+    color: whitesmoke;
+    font-size: 150%;
+}
+#dis{
+    margin-right: 2%;
+}
+#dis:hover{
+    background: #ffffff;
+}
+section{
+    background: #ffaaaa;
+    padding: 1%;
+    text-align: center;
+}
+#game{
+    border: 5px solid grey;
+    background: whitesmoke;
+    box-shadow: 5px 5px 15px rgba(1,1,1,0.75);
+}
+#img{
+    border: 5px solid  whitesmoke;
+    background: whitesmoke;
+    box-shadow: 5px 5px 15px rgba(1,1,1,0.75);
+}
+#img:hover{
+    border: 5px solid #771111;
+    background: #771111;
+}
+#img1 {
+    width: 94%;
+}
+#botons{
+    text-align: right;
+}
+#sor, #con1, #con2 {
+    display:inline-block;
+    margin-left : 0.5%;
+    border: 5px solid whitesmoke;
+}
+#sor:hover, #con1:hover, #con2:hover {
+    background: grey;
+    border: 5px solid grey;
+}
+#maps{
+    padding: 1%;
+    background: whitesmoke;
+}
+footer{
+    padding: 0.1%;
+    height: 8%;
+    background: #aaaaaa;
+    font-size: 150%;
+}
+#flotar{
+    text-align: right;
+}
+#linking{
+    float: left;
+    color: black;
+    margin-right: 2%;
+}
+#links{
+    text-align: center;
+    text-decoration: underline;
+}
+#regitre{
+    padding: 1%;
+    background: whitesmoke;
+    color: #666666;
+    font-size: 150%;
+}
+input, textarea{  
+    background: whitesmoke;
+    box-shadow: 5px 5px 15px rgba(1,1,1,0.75);   
+}
+input:hover, textarea:hover{
+    background: #666666;
+    color: yellow;
+}
+textarea{
+    width: 90%;
+}
+input::placeholder{
+    color:red;
+    float: right;
+}
